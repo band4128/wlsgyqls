@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인공지능 활용 업사이클링</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        <img src="./img/logo.png" alt="" class="img">
+        <div class="nav-title">
+            <img src="./img/visual_text_new.png" alt="">
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="left-panel">
+            <button type="button" id="webcam-button" onclick="toggleWebcam()">Start Webcam</button>
+            <div id="webcam-container"></div>
+            <div id="label-container"></div>
+        </div>
+        <div class="right-panel">
+            <h2>새롭게 사용해보세요!</h2>
+            <div id="link-container"></div>
+        </div>
+        <div class="todo">
+            <h2>오늘의 할일!</h2>
+            <div class="todo-input-container">
+                <input type="text" id="todo-input" placeholder="할 일 입력">
+                <button id="add-todo-button" onclick="addTodo()">추가</button>
+            </div>
+            <ul id="todo-list"></ul>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
